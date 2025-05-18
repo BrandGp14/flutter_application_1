@@ -1,0 +1,44 @@
+name: flutter_application_1
+description: Una aplicación de cartelera con diferentes estilos.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  google_fonts: ^5.1.0  # Para usar fuentes de Google sin descargarlas
+  cached_network_image: ^3.2.3  # Para cargar imágenes con caché
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  
+  # Declarar las fuentes - AJUSTA ESTO a tus archivos reales
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
+        # Elimina o comenta esta línea si no tienes este archivo
+        # - asset: assets/fonts/Montserrat-Bold.ttf
+    
+    - family: Pacifico
+      fonts:
+        - asset: assets/fonts/Pacifico-Regular.ttf
+    
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
+  
+  # Agregar imágenes
+  assets:
+    - assets/images/posters/
+    - assets/images/backgrounds/
